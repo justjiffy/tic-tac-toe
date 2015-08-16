@@ -1,0 +1,65 @@
+body {
+	text-align: center;
+	font-family: tahoma, arial;	
+	background-image: url('http://pixers.es/image/1/400/n8nLuskY9okQX8GF16kTb8jRCFUTqt3OH89RxNHT0vTFVVWZf12R8RUQEp0QfNDXw79QhEERhEERho0Qh72MhF3Fqz4il5maulmR0ZmaERGaho2F0Rni/95/70/70/0095707074/1/fotomural-gatos-divertidos-dibujos-animados-patron-sin-fisuras-animal.jpg');
+	background-attachment: fixed; 	
+}
+
+h1 {
+	text-shadow: 1px 1px #FEAC48;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration: overline underline;
+	background-color: yellow;
+}
+
+p {
+	text-shadow: 3px 3px white;
+}
+
+.styled {	
+	background-color: rgba(255, 255, 255 ,0.95);
+	padding: 10px 20px;
+	width: 75%;
+	margin: 10px auto;
+	border: 1px inset black;
+	box-shadow: 5px 3px #999999;
+}
+
+#container {
+	width: 100%;
+}
+
+#board {
+	margin: 0 auto;
+	width: 600px;
+	padding-bottom: 50px;
+}
+
+#winner1 {
+	display: none;
+}
+
+#winner2 {
+	display: none;
+}
+
+#catsGame {
+	display: none;
+}
+
+.box {
+	background-color: rgba(255, 255, 255 ,0.95);
+	border: 1px inset black;
+	float: left;
+	padding: 10px;
+	width: 140px;
+	margin: 10px 10px 10px 20px;
+	height: 140px;
+	line-height: 140px;
+	vertical-align: center;
+	box-shadow: 5px 3px #999999;
+}

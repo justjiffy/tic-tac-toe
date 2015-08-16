@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Let's Play!</h1>
+
+<p><strong>RULES:</strong> Each player takes a turn and places their piece by clicking on the box. The first person to get three in a row (horizontally, diagonally or vertically) wins!</p>
+
+<div id="board">
+	<div id="row1">
+		<div id="box1" class="box" onClick="play()">&nbsp;&nbsp;&nbsp;</div>
+		<div id="box2" class="box" onClick="play()">&nbsp;&nbsp;&nbsp;</div>
+		<div id="box3" class="box" onClick="play()">&nbsp;&nbsp;&nbsp;</div>
+	</div><br>
+	<div id="row2">
+		<div id="box4" class="box" onClick="play()">&nbsp;&nbsp;&nbsp;</div>
+		<div id="box5" class="box" onClick="play()">&nbsp;&nbsp;&nbsp;</div>
+		<div id="box6" class="box" onClick="play()">&nbsp;&nbsp;&nbsp;</div>
+	</div><br>
+	<div id="row3">
+		<div id="box7" class="box" onClick="play()">&nbsp;&nbsp;&nbsp;</div>
+		<div id="box8" class="box" onClick="play()">&nbsp;&nbsp;&nbsp;</div>
+		<div id="box9" class="box" onClick="play()">&nbsp;&nbsp;&nbsp;</div>
+	</div>
+</div>
+
+<script>
+
+/* TEST ZONE
+var doggy = document.getElementById('box2');
+
+document.getElementById('box1').onclick = play()X;
+document.getElementById('box2').onclick = playO;
+
+*/
+
+
+function play(id, array) {
+	// var clickCount = function() {
+	// 	for (clickCount = 0; clickCount < 10;  clickCount += 1) {
+	// 	return clickCount +1;
+	// 	console.log
+	// }
+	clickCount = 3;
+
+	if (clickCount === 1) { 
+		document.querySelector('.box').innerHTML = "O ";
+		document.querySelector('.box').style.backgroundColor = "purple";
+		document.querySelector('.box').style.color = "white";
+		console.log(clickCount());
+
+	}
+	else document.getElementById('box2').innerHTML = "X ";
+		document.getElementById('box2').style.backgroundColor = "pink";
+}
+
+
+	
+	
+
+// 	else function playO() {
+// 	document.getElementById('box2').innerHTML = "O ";
+// 	document.getElementById('box2').style.backgroundColor = "purple";
+// 	document.getElementById('box2').style.color = "white";
+// 	}
+// };
+
+
+</script>
+</body>
+</html>
