@@ -8,7 +8,10 @@ body {
 h1 {
 	text-shadow: 1px 1px #FEAC48;
 	font-family: 'Cabin Sketch', cursive;
-	font-size: 48px;
+	font-size: 100px;
+	line-height: 80px;
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
@@ -31,58 +34,61 @@ button {
 .styled {	
 	background-color: rgba(255, 255, 255 ,0.95);
 	padding: 10px 20px;
-	width: 75%;
-	margin: 10px auto;
 	border: 1px inset black;
 	box-shadow: 5px 3px #999999;
+	margin-top: 20px;
 }
 
 #container {
-	width: 70%;
-	margin: 0 auto;
+	height: 100vh;
+	padding-left: 8%;
+	text-align: center;
+	width: 100%;
 }
 
 #instructions {
-	width: 30%;
-	float: left;
-	display: block;
-	height: 95vh;
-	margin-left: 10px;
-	margin-bottom: 10px;
+	width: 24%;
 	text-align: center;
-	padding: 0px 0px 0px 0px;	
+	float: left;	
+	overflow: scroll;
+}
+
+#gameSide {
+	padding-top: 100px;
+	width: 70%;
+	float: right;
 }
 
 #board {
-	margin: 30px 30px 30px 50px;
-	width: 50%;
 	float: left;
-	padding-bottom: 50px;
 	font-family: 'Cabin Sketch', cursive;
 	font-size: 48px;
-}
-
-#winner1 {
-	display: none;
-}
-
-#winner2 {
-	display: none;
-}
-
-#catsGame {
-	display: none;
+	width: 480px;
 }
 
 .box {
 	background-color: rgba(255, 255, 255 ,0.95);
-	border: 1px inset black;
+	border: 1px dashed black;
 	float: left;
-	padding: 10px;
-	width: 20%;
-	margin: 10px 10px 10px 10px;
-	height: 90px;
-	line-height: 90px;
+	width: 158px;
+	height: 158px;
+	line-height: 158px;
 	vertical-align: center;
 	box-shadow: 5px 3px #999999;
+}
+
+#winner1 {
+	margin-top: 25px;
+	display: none;
+}
+
+#winner2 {
+	margin-top: 25px;
+	display: none;
+}
+
+
+#catsGame {
+	margin-top: 25px;
+	display: none;
 }
