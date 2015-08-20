@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
- 	<link rel="stylesheet" type="text/css" href="css/style3.css">
+ 	<link rel="stylesheet" type="text/css" href="css/style2.css">
  	<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:700' rel='stylesheet' type='text/css'>
 	<title>Array Tic-Tac-Toe</title>
   </head>
   
   <body>
   	<div id="container">
-	  <div id="instructions">
-		<div class="styled">
-			<h1 style="text-align: left">TIC</h1>
-			<h1 style="">TAC</h1>
-			<h1 style="text-align: right">TOE</h1>
-		</div>
-		<div class="styled">
-			<p>This version's backend logic is done using array, and the layout is done using floats. Each div has an onClick="clicked( )" tag that passes 2 arguments into the function, the div's ID and the corresponding array.</p>
+	<div id="instructions" class="styled">
+		<h1>TIC<br>
+			TAC<br>
+			TOE<br>
+		</h1>
+		<p style="width: 70%">This version's backend logic is done using array, and the layout is done using floats. Each div has an onClick="clicked( )" tag that passes 2 arguments into the function, the div's ID and the corresponding array.</p>
 
 		<div id="winner1" class="styled">
 			<h2>PLAYER 1 WINS</h2>	
@@ -31,12 +29,11 @@
 			<h2>CAT's GAME!!!</h2>	
 			<input type="button" value="PLAY AGAIN!" onClick="location.reload()">
 		</div>
-		</div>
-	  </div>
 
-	 <div id="gameSide"> 
-   	  <div id="board">
-		<div id="one" class="box" data-player="" onClick="clicked('one', 0)"></div>
+	</div>
+
+   	 <div id="board">
+		<div id="one" class="box" onClick="clicked('one', 0)"></div>
 		<div id="two" class="box" onClick="clicked('two', 1)"></div>
 		<div id="three" class="box" onClick="clicked('three', 2)"></div>
 		<div id="four" class="box" onClick="clicked('four', 3)"></div>
@@ -47,8 +44,9 @@
 		<div id="nine" class="box" onClick="clicked('nine', 8)"></div>
 		<br>
 	</div>
-</div>
-  <div>
+
+
+<div>
 
 
 <script>
@@ -69,8 +67,6 @@ document.getElementById('seven').innerHTML = board[6];
 document.getElementById('eight').innerHTML = board[7];
 document.getElementById('nine').innerHTML = board[8];
 
-
-//USE THIS 
 //click counter: if even = player 1, if odd = player 2, when at 9 with no winner = catsGame!
 var clickCount = 0;
 
@@ -90,9 +86,6 @@ function clicked(id, array) {
 	};
 	//disables changes once it's been clicked
 	thisId.onclick = {};
-
-			//instead: get position of the selected cell
-				//check to see if 
 	//changes board to show new array string
 	thisId.innerHTML = board[array];	
 	//win logic
@@ -130,9 +123,6 @@ function catsGame () {
 	document.getElementById('catsGame').style.display = "block";
 }
 
-//
-// var divs = document.getElementById('board').childNodes;
-// for ( var i = 0)
 </script>	
 </body>
 </html>
