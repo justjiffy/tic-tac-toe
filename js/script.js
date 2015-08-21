@@ -8,31 +8,28 @@
 	$('#board').children().on('click', function(){
 		if (this.innerHTML=="") { makePlay(this); win(); }
 			else { invalidMove(this); win(); };
-
 	});
 
 	function makePlay(elm) {
-		if (player1 === true)  { $(elm).html('X'); player1 = false; playCount++; }
-			else { $(elm).html("O"); player1 = true; playCount++; }
+		if (player1 === true)  { $(elm).html('X'); playCount++; }
+			else { $(elm).html("O"); playCount++; }
 	};
 
 	function invalidMove(elm) { $(elm).effect('shake') };
 
 	function win() {
-			console.log(playCount);
-			console.log(box(0));
-			console.log(box(3));
-			console.log(box(6));
-			console.log(box(0) == box(3) && box(3) == box(6) && playCount != 0);
-		  if ( box(0) == box(1) && box(1) == box(2) && playCount !== 0 ) { whichWinner(0) }
-		  else if ( box(0) == box(3) && box(3) == box(6) && playCount != 0 ) { whichWinner(0) }
-		  else if ( box(3) == box(4) && box(4) == box(5) && playCount != 0 ) { whichWinner(3) }
-		  else if ( box(6) == box(7) && box(7) == box(8) && playCount != 0 ) { whichWinner(6) }
-		  else if ( box(2) == box(5) && box(5) == box(8) && playCount != 0 ) { whichWinner(2) }
-		  else if ( box(1) == box(4) && box(4) == box(7) && playCount != 0 ) { whichWinner(1) }
-		  else if ( box(0) == box(4) && box(4) == box(8) && playCount != 0 ) { whichWinner(0) }
-		  else if ( box(2) == box(4) && box(4) == box(6) && playCount != 0 ) { whichWinner(2) }
+		if (playCount > 0) {
+		  if ( box(0) == box(1) && box(1) == box(2) ) { whichWinner(0) }
+		  else if ( box(0) != "" && box(0) == box(3) && box(3) == box(6) ) { whichWinner(0) }
+		  else if ( box(3) != "" && box(3) == box(4) && box(4) == box(5) ) { whichWinner(3) }
+		  else if ( box(6) != "" && box(6) == box(7) && box(7) == box(8) ) { whichWinner(6) }
+		  else if ( box(2) != "" && box(2) == box(5) && box(5) == box(8) ) { whichWinner(2) }
+		  else if ( box(1) != "" && box(1) == box(4) && box(4) == box(7) ) { whichWinner(1) }
+		  else if ( box(0) != "" && box(0) == box(4) && box(4) == box(8) ) { whichWinner(0) }
+		  else if ( box(2) != "" && box(2) == box(4) && box(4) == box(6) ) { whichWinner(2) }
 		  else if (playCount > 8) { $('#catsGame').css({ display: 'block' }); };
+		}
+		player1 = !player1;
 		};
 
 function whichWinner(n) {
