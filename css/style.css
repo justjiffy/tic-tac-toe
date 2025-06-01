@@ -3,11 +3,11 @@ body {
 	font-family: tahoma, arial;	
 	background-image: url('../cat69.jpg');
 	background-size: 300px;
+	font-family: "Henny Penny", system-ui;
 }
 
 h1 {
 	text-shadow: 1px 1px #FEAC48;
-	font-family: "Henny Penny", system-ui;
 	font-size: 100px;
 	line-height: 80px;
 	margin: 0;
@@ -15,7 +15,6 @@ h1 {
 }
 
 h2 {
-	font-family: 'Cabin Sketch', cursive;
 	font-size: 36px;
 	font-weight: 700;
 	text-decoration: overline underline;
@@ -68,7 +67,6 @@ button {
 
 #board {
 	float: left;
-	font-family: 'Cabin Sketch', cursive;
 	font-size: 48px;
 	width: 480px;
 }
