@@ -36,6 +36,7 @@ button {
 	border: 1px inset black;
 	box-shadow: 5px 3px #999999;
 	margin-top: 20px;
+	font-family: "Henny Penny", system-ui;
 }
 
 .upfront {
