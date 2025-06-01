@@ -98,3 +98,16 @@ button {
 	margin-top: 25px;
 	display: none;
 }
+
+footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+footer a {
+	color: white;
+	background: black;
+	text-decoration: none;
+}
