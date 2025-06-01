@@ -2,7 +2,7 @@ body {
 	text-align: center;
 	font-family: tahoma, arial;	
 	background-image: url('../cat69.jpg');
-	background-attachment: fixed; 	
+	background-size: 300px;
 }
 
 h1 {
